@@ -5,7 +5,12 @@
 This project compares the performance of a custom-built Convolutional Neural Network (CNN) and a pretrained ConvNeXt model on an image classification task using a dataset of sheep breeds.
 
 Both models were trained and evaluated using PyTorch, with macro F1-score as the primary metric. Training and validation results are visualized for easy comparison.
+The dataset used in this project consists of labeled images of various sheep breeds.
 
+You can access and download it directly from Kaggle:
+📥 https://www.kaggle.com/competitions/sheep-classification-challenge-2025/overview
+
+Make sure you have Kaggle API credentials set up if you plan to download it programmatically.
 ## Key Features
 
 - 🧠 Custom CNN architecture built from scratch
