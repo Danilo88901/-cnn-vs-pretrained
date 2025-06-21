@@ -25,6 +25,4 @@ This repository contains:
 Results
 The pretrained ConvNeXt model significantly outperforms the custom CNN, achieving a notably higher macro F1 score, particularly on the validation dataset. This demonstrates the power of transfer learning and pretrained weights.
 
-Despite its simplicity and lack of pretraining, the custom CNN shows decent performance, indicating it can be a reasonable baseline model for image classification tasks when computational resources or data are limited.
-
 Training and validation losses, as well as macro F1-score curves for both models, are included to provide a detailed comparison of their learning dynamics.
