@@ -1,0 +1,6 @@
+### 📌 Model Evaluation Summary
+
+- **Custom CNN** struggled to learn meaningful features. Its validation F1-score plateaued at around 0.0784 and showed no significant improvement, despite a decreasing training loss.
+- **Pretrained model** (e.g., ResNet18) demonstrated strong and consistent performance. The validation F1-score started around 0.40 and reached up to **0.93** by the end of training.
+
+🧠 **Conclusion**: Pretrained models significantly outperform custom CNNs on limited datasets. They not only learn faster but also generalize better, making them the preferred choice for small or imbalanced datasets.
