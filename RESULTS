@@ -1,6 +1,14 @@
-### 📌 Model Evaluation Summary
+📈 Results & Conclusion
+🔬 Key Results:
+✅ Model: ConvNeXt-Base (pretrained on ImageNet)
 
-- **Custom CNN** struggled to learn meaningful features. Its validation F1-score plateaued at around 0.0784 and showed no significant improvement, despite a decreasing training loss.
-- **Pretrained model** (e.g., ResNet18) demonstrated strong and consistent performance. The validation F1-score started around 0.40 and reached up to **0.93** by the end of training.
+📊 Best Validation Macro F1 Score: 93%
 
-🧠 **Conclusion**: Pretrained models significantly outperform custom CNNs on limited datasets. They not only learn faster but also generalize better, making them the preferred choice for small or imbalanced datasets.
+🐑 Number of Classes: 7 sheep breeds
+
+🔁 Training Epochs: 20
+
+🔓 Fine-tuning: All ConvNeXt layers unfrozen starting from epoch 5
+
+🧠 Conclusion:
+The ConvNeXt-Base model demonstrated excellent performance on the sheep breed classification task, achieving a strong 93% macro F1 score on the validation set. This result highlights the effectiveness of transfer learning and the robustness of ConvNeXt in handling fine-grained visual classification problems. Proper data augmentation and gradual fine-tuning significantly contributed to the model's generalization performance.
