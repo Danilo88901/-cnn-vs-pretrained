@@ -1,0 +1,41 @@
+# 🐑 Custom CNN for Sheep Classification
+Link:https://www.kaggle.com/competitions/sheep-classification-challenge-2025 
+This folder contains a custom convolutional neural network (CNN) model designed to classify sheep breeds based on images.
+
+---
+
+## 📄 Files
+
+- `custom_cnn_model.py` — the main training script that defines, trains, and evaluates a CNN model using PyTorch.
+- `Plots for my CNN.png` — training and validation metrics plotted over epochs.
+
+---
+
+## ⚙️ What the Script Does
+
+The script performs the following:
+
+- Loads and preprocesses image data using custom PyTorch Dataset and torchvision transforms.
+- Defines a custom CNN architecture with 5 convolutional blocks and dropout for regularization.
+- Trains the model over 15 epochs using Adam optimizer and learning rate scheduling.
+- Calculates **macro F1-score** on training and validation sets at every epoch.
+- Plots training/validation **loss** and **macro F1-score** across epochs.
+
+---
+
+## 📦 Required Imports
+
+Make sure the following libraries are available before running the script:
+
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import Dataset, DataLoader
+from torchvision import transforms
+import pandas as pd
+from PIL import Image
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import f1_score
+import matplotlib.pyplot as plt
